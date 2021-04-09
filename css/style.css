@@ -1,0 +1,323 @@
+body{
+    height: 600px;
+    background-color: #000;
+}
+
+.head{
+    background-color: #121212;
+    width: 100%;
+    margin: 30px auto;
+    border-radius: 4%;
+}
+
+.info{
+    color: goldenrod;
+    background-color: #171717;
+    border-bottom-left-radius: 4%;
+    border-top-left-radius: 4%;
+    padding-top: 20px;
+    box-shadow: 2px 0 1px #000;
+}
+
+.info img{
+    width: 75%;
+    height: 45%;
+    animation: up-to-down 1.2s ease-in-out infinite alternate-reverse both;
+    padding-top: 50px;
+}
+
+@keyframes up-to-down{
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.info h2{
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info p{
+    color: rgba(255, 217, 0, 0.533);
+}
+
+.info .icon ul li{
+    display: inline;
+    margin: 10px;
+}
+
+.info .icon ul li a{
+    color: goldenrod;
+}
+
+.info button{
+    background-color: transparent;
+    color: goldenrod;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 1.5px solid goldenrod;
+    transition: .6s;
+}
+
+.info button:hover{
+    color: #171717;
+    background-color: goldenrod;
+}
+
+.info .copyright{
+    margin-top: 10px;
+}
+
+.side-icons{
+    color: goldenrod;
+    padding: 20px 0;
+    background-color: #171717;
+    border-bottom-right-radius: 4%;
+    border-top-right-radius: 4%;
+    box-shadow: -2px 0 1px #000;
+}
+
+.side-icons ul{
+    margin:  30px 20px;
+}
+
+.side-icons ul li{
+    margin:  0px 0px 20px;
+    padding: 10px 0;
+    border: 1px solid goldenrod;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .6s;
+    width: 100%;
+}
+
+
+.side-icons ul li:hover{
+    color:  #171717;
+    background-color: goldenrod;
+}
+
+.side-icons ul .selected{
+    color:  #171717;
+    background-color: goldenrod;
+}
+
+.tabs-section .tabs-content section:not(.home){
+    display: none;
+}
+
+/*Start tabs-section */
+
+.tabs-section{
+    color: #fff;
+    height: 570px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {width: 8px;}::-webkit-scrollbar-thumb {background: linear-gradient(90deg, #555, #555);}::-webkit-scrollbar-thumb:hover {background: linear-gradient(270deg, #555, #555, #555);}html {scrollbar-color: #555 #555;}
+
+.tabs-section .tabs-content .home{
+    margin: 250px auto 0;
+    font-family: 'Potta One', cursive;
+}
+
+.tabs-section .tabs-content .home img{
+    width: 50%;
+    height: 50%;
+    margin-top: -140px;
+    animation: up-to-more-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+.tabs-section .tabs-content .home h1{
+    margin-top: 20px;
+}
+
+@keyframes up-to-more-down{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(20px);
+    }
+}
+
+.tabs-section .tabs-content .my-skills{
+    font-family: poppins;
+    margin-top: 140px;
+}
+
+@media (max-width:576px){
+    .tabs-section .tabs-content .my-skills{
+        margin-top: 40px;
+    }
+}
+
+.tabs-section .tabs-content .my-skills h2{
+    margin: 20px 0 0;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.tabs-section .tabs-content .my-skills .skill-area{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tabs-section .tabs-content .my-skills .skill-area .single-skill{
+    text-align: center;
+    float: left;
+}
+
+@media (max-width: 767px){
+    .tabs-section .tabs-content .my-skills .skill-area .single-skill{
+        width: 50%;
+    }
+    .tabs-section .tabs-content .my-skills .skill-area .single-skill:last-child{
+        width: 100%;
+    }
+}
+
+@media (max-width:992px){
+    .info, .side-icons{
+        border-radius: 0%;
+    }
+    .head{
+        border-radius: 0%;
+    }
+    .side-icons{
+        box-shadow: 0 1px 1px #000;
+    }
+    .head{
+        margin-top: 0;
+    }
+}
+
+/* Start Testimonials*/
+
+.testimonials{
+    margin: 100px 50px;
+    overflow: hidden !important;
+}
+
+@media (max-width:767px){
+    .testimonials{
+        margin: 100px auto;
+    }
+}
+
+.testimonials .test-content{
+    float: left;
+    width: 50%;
+}
+
+.testimonials .test-content img{
+    width: 160px;
+    height: 240px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.testimonials .test-content h2{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Potta One', cursive;
+}
+
+.slick-next::before {
+    content: "";
+}
+
+.slick-prev:before {
+    content: '';
+}
+/* End Testimonials*/
+
+/* Start Contact */
+.tabs-section .tabs-content .contact{
+    margin: 220px auto;
+}
+
+.tabs-section .tabs-content .contact ul li{
+    display: inline-block;
+    margin: 20px 30px;
+}
+
+.tabs-section .tabs-content .contact ul li a{
+    color: #fff;
+}
+
+.tabs-section .tabs-content .contact ul li a i{
+    font-size: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.tabs-section .tabs-content .contact ul li a i:hover{
+    color: goldenrod;
+}
+
+@media (max-width: 992px){
+    .tabs-section .tabs-content .contact{
+        margin: 110px auto;
+    }
+}
+/* End Contact */
+
+/*Start pricing*/
+
+.tabs-section .tabs-content .pricing .card{
+    margin: 10px;
+    display: inline-block;
+    padding: 0;
+    border: none;
+}
+
+.tabs-section .tabs-content .pricing .card .card-body a{
+    color: #0f1123;
+    font-weight: bold;
+}
+
+.tabs-section .tabs-content .pricing .card .card-body {
+    margin-bottom: 20px;
+}
+
+.tabs-section .tabs-content .pricing .card .card-body{
+    padding: 0;
+    padding-top:30px ;
+}
+
+.tabs-section .tabs-content .pricing .card .card-body .card-title{
+    background-color: #0f1123;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.tabs-section .tabs-content .pricing .card .card-body .card-text{
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.tabs-section .tabs-content .pricing .card .card-body .card-text span{
+    font-size: 20px;
+}
+
+.tabs-section .tabs-content .pricing .card ul li{
+    color: #000;
+}
+/* End pricing*/
+
+.mob-media ul li{
+    display: inline;
+    padding: 25px 10px 20px;
+    float: left;
+    width: 15%;
+    margin-left: 1.5%;
+    margin-top: -40px;
+    border-radius: 5px;
+}
